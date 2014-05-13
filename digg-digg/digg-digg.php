@@ -411,7 +411,7 @@ function integrateFloatingButtonsIntoWpContent_footerload($dd_floating_button_fo
 		$floatingJSOptions = '<script type="text/javascript">var dd_offset_from_content = '.(!empty($ddFloatDisplay[DD_FLOAT_OPTION][DD_FLOAT_OPTION_LEFT])?($ddFloatDisplay[DD_FLOAT_OPTION][DD_FLOAT_OPTION_LEFT]):DD_FLOAT_OPTION_LEFT_VALUE).';</script>';
 		$floatingJS = '<script type="text/javascript" src="' . DD_PLUGIN_URL . '/js/diggdigg-floating-bar.js?ver=' . DD_VERSION . '"></script>';
 
-		$dd_floating_bar = "<div class='dd_outer'><div class='dd_inner'>" . $floatButtonsContainer . "</div></div>" . $floatingCSS . $floatingJSOptions . $floatingJS . $dd_lazyLoad_scheduler_script . $dd_lazyLoad_jQuery_script;
+		$dd_floating_bar = "<div class='dd_outer'><div class='dd_inner'>" . $floatButtonsContainer . "</div></div>" . $floatingJSOptions . $floatingJS . $dd_lazyLoad_scheduler_script . $dd_lazyLoad_jQuery_script;
 
 		$dd_start_anchor = '<a id="dd_start"></a>';
 
