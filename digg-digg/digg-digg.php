@@ -335,7 +335,7 @@ function integrateFloatingButtonsIntoWpContent($dd_floating_button_for_display,$
         $post = $wp_query->post; //get post content
         $id = $post->ID; //get post id
         
-        // Try post overriden start_anchor_id before falling back to sitewide
+        // Try post overridden start_anchor_id before falling back to sitewide
         if(get_post_meta( $id, 'dd_override_start_anchor_id', true ) || get_post_meta( $id, 'dd_override_top_offset', true )){        
 	        $dd_override_start_anchor_id = get_post_meta( $id, 'dd_override_start_anchor_id', true );
 	        $dd_override_top_offset = get_post_meta( $id, 'dd_override_top_offset', true );
